@@ -8,11 +8,12 @@
 </head>
 <body>
     <a href="/PPOII/Inicial/inicial.html" class="aaa">MIMIMI</a>
-    <form class="login">
+
+    <form class="login" action="login.php" method="post">
         <h2>Login</h2>
         <div class="box">
-            <input type="text" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
+            <input type="text" name="usuario" placeholder="Usuário" required>
+            <input type="password" name="senha" placeholder="Senha" required>
             <button type="submit">Entrar</button>
         </div>
     
