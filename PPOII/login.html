@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="login.js" defer></script>
 </head>
 <body>
-    <a href="/PPOII/Inicial/inicial.html" class="aaa">MIMIMI</a>
+    <a href="index.html" class="aaa">MIMIMI</a>
 
-    <form class="login" action="login.php" method="post">
+    <form id="loginform" class="login" enctype="multipart/form-data">
         <h2>Login</h2>
         <div class="box">
             <input type="text" name="usuario" placeholder="Usuário" required>
             <input type="password" name="senha" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
+            <button id="loginformbutton" type="submit">Entrar</button>
         </div>
+        <div id="error"> </div>
+                       
     
         <div class="cadastro">
             <p>Não possui cadastro?</p>
-            <a href="/PPOII/Cadastro/cadastro.html">Cadastrar</a>
+            <a href="cadastro.html">Cadastrar</a>
         </div>
     </form>
 </body>

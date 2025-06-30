@@ -1,5 +1,5 @@
 <?php
-include_once("../conexao.php");
+include_once("conexao.php");
 
 $usuario = $_POST['usuario'];
 $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
@@ -7,10 +7,9 @@ $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 $sql = "INSERT INTO usuarios (usuario, senha) VALUES ('$usuario', '$senha')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Cadastro realizado com sucesso!";
+    echo "1";
 } else {
-    echo "Erro: " . $conn->error;
+    echo "-1";
 }
-
 $conn->close();
 ?>
