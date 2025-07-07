@@ -10,7 +10,7 @@ $(document).ready(function() {
 		   data: form.serialize(),
 		   success: function(response) {
 			    if (response == '1'){
-			   	    window.Location.href = "login.html";
+			   	    window.location.href = "login.html";
 		        }
                 else if (response == '0') {					
 				 	    $('#error').html("Usuário já existe");

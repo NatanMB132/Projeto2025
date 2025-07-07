@@ -10,7 +10,7 @@ $(document).ready(function() {
 		   data: form.serialize(),
 		   success: function(response) {
 			    if (response == '1'){
-			   	    window.Location.href = "index.html";
+			   	    window.location.href = "index.html";
 		        }
                 else if (response == '0') {					
 				 	    $('#error').html("Senha inválidos");
