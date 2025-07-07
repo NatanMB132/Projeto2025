@@ -1,12 +1,12 @@
 $(document).ready(function() {
-   let form = $("#loginform");
+   
 
-   $("#loginformbutton").click(function(e) {
+   $("#loginform").submit(function(e) {
    	e.preventDefault();
 
 		$.ajax({
 		   type: "POST",
-		   url: "login.php",
+		   url: "./control/login.php",
 		   data: form.serialize(),
 		   success: function(response) {
 			    if (response == '1'){

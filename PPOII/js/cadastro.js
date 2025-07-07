@@ -1,13 +1,12 @@
 $(document).ready(function() {
-   let form = $("#cadastroform");
-
+   
    $("#cadastrosubmit").click(function(e) {
    	e.preventDefault();
 
 		$.ajax({
 		   type: "POST",
-		   url: "cadastro.php",
-		   data: form.serialize(),
+		   url: "./control/cadastro.php",
+		   data: $(this).serialize(),
 		   success: function(response) {
 			    if (response == '1'){
 			   	    window.location.href = "login.html";
