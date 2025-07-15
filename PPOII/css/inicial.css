@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    caret-color: transparent;
+}
+
+.textos {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #f0efef;
+}
+.menu-hamburguer {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20;
+}
+.menu-hamburguer span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu-links {
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 140px;
+    display: none;
+    flex-direction: column;
+    z-index: 19;
+}
+.menu-links.active {
+    display: flex;
+}
+.menu-links li {
+    margin: 0;
+}
+.menu-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.2s;
+}
+
+.voltar {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    z-index: 10;
+    transition: box-shadow 0.2s;
+}
+
+.voltar svg {
+    width: 44px;
+    height: 44px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    background: #fff;
+    transition: background 0.2s;
+}
+
+img.logo {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    width: 30px;
+    height: 44px;
+}

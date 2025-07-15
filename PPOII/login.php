@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if (password_verify($senha, $row["senha"])) {
             $_SESSION["usuario"] = $usuario;
-            header("Location: index.php"); // redireciona após login
+            header("Location: index.php"); 
             exit();
         } else {
             echo "Senha incorreta!";
@@ -36,10 +36,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js"></script>
 </head>
 <body>
     <form id="loginform" class="login" method="post" action="login.php">
-        <h2>Login</h2>
+        <div>
+            <div class="header-cadastro">
+                <img src="./img/EBsimbolo.png" class="EBlogo" alt="LogoExército Brasileiro">
+                <h2>Login</h2>
+            </div>
+        </div>
         <div class="box">
             <input type="text" name="usuario" placeholder="Usuário" required>
             <input type="password" name="senha" placeholder="Senha" required>
