@@ -2,6 +2,7 @@
 session_start();
 include "conexao.php";
 
+$msg = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $_POST["usuario"];
     $senha = $_POST["senha"];
@@ -19,10 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: index.php"); 
             exit();
         } else {
-            echo "Senha incorreta!";
+            $msg = '<div class="msgErro">&#10006; Senha incorreta!</div>';
         }
     } else {
-        echo "Usuário não encontrado!";
+        $msg = '<div class="msgErro">&#10006; Usuário não encontrado!</div>';
     }
 
     $stmt->close();
@@ -52,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="password" name="senha" placeholder="Senha" required>
             <button id="loginformbutton" type="submit">Entrar</button>
         </div>
-        <div id="error"> </div>
+        <div id="error"> <?php echo $msg; ?> </div>
                        
         <div class="cadastro">
             <p>Não possui cadastro?</p>
