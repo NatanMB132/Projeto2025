@@ -1,0 +1,293 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    caret-color: transparent;
+}
+
+.t1 {
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.t2 {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.textos {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #f0efef;
+}
+.menu-hamburguer {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20;
+}
+.menu-hamburguer span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu-links {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 140px;
+    display: none;
+    flex-direction: column;
+    z-index: 19;
+}
+.menu-links.active {
+    display: flex;
+}
+.menu-links li {
+    margin: 0;
+}
+.menu-links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background 0.2s;
+}
+
+.voltar {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    z-index: 10;
+    transition: box-shadow 0.2s;
+}
+
+.voltar svg {
+    width: 44px;
+    height: 44px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    background: #fff;
+    transition: background 0.2s;
+}
+
+img.logo {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    width: 30px;
+    height: 44px;
+}
+
+.usuario {
+    display: block;
+    background: #fff;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    margin: 8px 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 1px solid #4CAF50;
+}
+
+.concursos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 900px;
+}
+
+.concurso1, .concurso2, .concurso3 {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 24px 18px;
+    min-width: 200px;
+    max-width: 220px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+}
+.btn-concurso1, .btn-concurso2, .btn-concurso3 {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+.btn-concurso1:hover, .btn-concurso2:hover, .btn-concurso3:hover {
+    background: #388e3c;
+}
+
+.h2concursos {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 32px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+.menu-concursos {
+    position: relative;
+}
+.menu-concursos > a {
+    cursor: pointer;
+}
+.submenu-concursos {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    min-width: 120px;
+    z-index: 30;
+}
+.submenu-concursos.active {
+    display: block;
+}
+.submenu-concursos li {
+    margin: 0;
+}
+.submenu-concursos a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.2s;
+}
+.submenu-concursos a:hover {
+    background: #444;
+}
+
+.menu-concursos {
+    position: relative;
+}
+.menu-concursos > a {
+    cursor: pointer;
+}
+.submenu-concursos {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    min-width: 160px;
+    z-index: 30;
+}
+.submenu-concursos.active {
+    display: block;
+}
+.submenu-concursos li {
+    margin: 0;
+    position: relative;
+}
+.submenu-concursos a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.2s;
+}
+.submenu-concursos a:hover {
+    background: #444;
+}
+.submenu-exercito, .submenu-aeronautica, .submenu-marinha {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    min-width: 120px;
+    z-index: 40;
+}
+.submenu-exercito.active, .submenu-aeronautica.active, .submenu-marinha.active {
+    display: block;
+}
+.submenu-exercito a, .submenu-aeronautica a, .submenu-marinha a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.2s;
+}
+.submenu-exercito a:hover, .submenu-aeronautica a:hover, .submenu-marinha a:hover {
+    background: #444;
+}
