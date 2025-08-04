@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if (password_verify($senha, $row["senha"])) {
             $_SESSION["usuario"] = $usuario;
-            header("Location: index.php"); 
+            header("Location: home.php"); 
             exit();
         } else {
             $msg = '<div class="msgErro">&#10006; Senha incorreta!</div>';
