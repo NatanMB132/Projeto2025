@@ -1,0 +1,141 @@
+.msgErro {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: block;
+    font-size: 15px;
+    background: #e53935;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    background: #fff;
+    padding: 36px 32px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.header-login {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.header-login img.EBlogo {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.header-login h2 {
+    margin: 0;
+    color: #2980b9;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #bfc9d4;
+    font-size: 16px;
+    background: #f7f9fa;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1.5px solid #2980b9;
+    outline: none;
+}
+
+button {
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    transition: background 0.2s;
+    margin-top: 6px;
+}
+
+button:hover {
+    background: #1c5a85;
+}
+
+.cadastro {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+.cadastro p {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+}
+
+.cadastro a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.cadastro a:hover {
+    color: #1c5a85;
+    text-decoration: underline;
+}
+
+.msgCerto {
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    display: block;
+    font-size: 15px;
+    background: #4CAF50;
+}
+
+#error {
+    margin: 12px 0 0 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.login, .cadastro {
+    text-align: center;
+    margin-top: 10px;
+}
+
